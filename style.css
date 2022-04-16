@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: lightblue;
+    color: #fff;
+}
+p{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 50vh;
+}
