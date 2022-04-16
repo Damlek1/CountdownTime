@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travel Web</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 </head>
 <body>
-    <p id="countdown"></p>
-    <script>
-        var countDownDate = new Date ("Mar 13, 2023 00:00:00").getTime()
-        var x = setInterval(function(){
-            var now = new Date().getTime()
-            var distance = countDownDate - now
-            var days = Math.floor(distance/(1000 * 60 *  60 * 24))
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000)
-            document.getElementById("countdown").innerHTML = days + "day(s) " + hours + "hr(s) " + minutes + "m " + seconds + "s"
-            if (distance < 0) {
-                clearInterval(x)
-                document.getElementById("countdown").innerHTML = "Time has ended"
-            }
-        })
-    </script>
+<div class="main">
+    <div class="nav">
+        <h2 class="logo">:) DAMLEK</h2>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">EVENT</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+    <input class="submit" type="submit" value="search">
+    <div class="search-box">
+        <input class="search-txt" type="text" placeholder="type to search">
+    </div>
+
+    <div class="title">
+        <h1>TRAVEL 4VER</h1>
+    </div>
+    <div class="button">
+        <a href="#" class="btn">WATCH VIDEO</a>
+        <a href="#" class="btn">LEARN MORE</a>
+    </div>
+</div>
 </body>
 </html>
